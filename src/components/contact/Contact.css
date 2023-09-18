@@ -1,0 +1,94 @@
+/* Make the form look elegant, make them stack from top to bottom*/
+.container {
+  max-height: 100%;
+}
+form {
+    max-height: 100%;
+    max-width: 300px;
+    margin-top: 30px !important;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color:rgba(0, 0, 0, 0.151); 
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 1em;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #adaaaa;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button.default {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  button.default:hover {
+    background-color: #ccc; 
+  }
+  
+  button.primary {
+    background-color: #4caf50;
+    color: white; 
+  }
+  
+  button.primary:hover {
+    background-color: #45a049;
+  }
+  
+  button.danger {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  button.danger:hover {
+    background-color: #da190b;
+  }
+  
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .errors {
+    /* make it elegant and pop up */
+    color: red;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+  }
